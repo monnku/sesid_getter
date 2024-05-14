@@ -5,7 +5,7 @@ from flask import render_template, request
 def form():
     return render_template('index.html')
 
-@app.route('/sesid_getter/data', methods=['POST'])
+@app.route('/data', methods=['POST'])
 def do():
     user = request.form['username']
     pw = request.form['password']
