@@ -2,7 +2,7 @@ from testapp import app
 from flask import render_template, request, Flask
 app = Flask(__name__)
 
-@app.route('/', methods=['GET'])
+@app.route('/sesid_getter/', methods=['GET'])
 def form():
     return render_template('index.html')
 
