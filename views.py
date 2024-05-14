@@ -1,5 +1,4 @@
-from testapp import app
-import request
+from testapp import app, request
 
 @app.route('/sesid_getter', methods=['GET', 'POST'])
 def form():
