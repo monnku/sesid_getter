@@ -4,13 +4,13 @@ app = Flask(__name__)
 
 @app.route('/sesid_getter/', methods=['GET'])
 def form():
-    return render_template('index.html')
+    return render_template('apps/index.html')
 
 @app.route('/sesid_getter/data', methods=['POST'])
 def do():
     user = request.form['username']
     pw = request.form['password']
-    return render_template('index.html')
+    return render_template('apps/index.html')
 
 if __name__ == "__main__":
     app.run(debug=True)
