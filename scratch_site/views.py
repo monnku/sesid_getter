@@ -5,4 +5,4 @@ import request
 def sample_form_temp():
     user = request.form['username']
     pw = request.form['password']
-    return f'user:{user}'
+    return 'test'
