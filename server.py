@@ -9,4 +9,4 @@ def form():
 def do():
     user = request.form['username']
     pw = request.form['password']
-    return 'test'
+    return render_template('index.html')
