@@ -1,5 +1,6 @@
 from testapp import app
-from flask import render_template, request
+from flask import render_template, request, Flask
+app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def form():
@@ -10,3 +11,6 @@ def do():
     user = request.form['username']
     pw = request.form['password']
     return render_template('index.html')
+
+if __name__ == "__main__":
+    app.run(debug=True)
