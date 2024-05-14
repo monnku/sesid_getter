@@ -1,4 +1,5 @@
-from testapp import app, request
+from testapp import app
+from flask import render_template, request
 
 @app.route('/sesid_getter', methods=['GET', 'POST'])
 def form():
