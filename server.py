@@ -1,7 +1,7 @@
 from testapp import app
 from flask import render_template, request
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/main', methods=['GET', 'POST'])
 def form():
     if request.method == 'GET':
         return render_template('index.html')
